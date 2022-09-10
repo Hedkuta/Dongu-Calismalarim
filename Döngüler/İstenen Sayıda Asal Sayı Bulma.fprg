@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-10 07:03:31 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMTA7MDY6NDA6MDQgw5ZTOzI5MDc="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMTA7MDc6MDM6MzEgw5ZTOzE7MzAxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="istenenAsalsayi, bulunanAsalsayi, kontrolEdilensayilar, sayac, asalSayikontrol" type="Integer" array="False" size=""/>
+            <assign variable="bulunanAsalsayi" expression="0"/>
+            <assign variable="kontrolEdilensayilar" expression="2"/>
+            <output expression="&quot;L&#252;tfen Ka&#231; Tane Asal Say&#305; &#304;stedi&#287;inizi Yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="istenenAsalsayi"/>
+            <while expression="istenenAsalsayi &gt; bulunanAsalsayi">
+                <assign variable="asalSayiKontrol" expression="0"/>
+                <for variable="sayac" start="2" end="kontrolEdilensayilar / 2" direction="inc" step="1">
+                    <if expression="kontrolEdilensayilar % sayac == 0">
+                        <then>
+                            <assign variable="asalSayikontrol" expression="1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="asalSayikontrol == 0">
+                    <then>
+                        <output expression="kontrolEdilensayilar" newline="True"/>
+                        <assign variable="bulunanAsalsayi" expression="bulunanAsalsayi + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="kontrolEdilensayilar" expression="kontrolEdilensayilar + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

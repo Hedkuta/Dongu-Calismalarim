@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-07 09:50:18 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDc7MDk6NDE6MTkgw5ZTOzI5MjM="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDc7MDk6NTA6MTggw5ZTOzE7MzAzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, toplamtek, toplamcift, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplamtek" expression="0"/>
+            <assign variable="toplamcift" expression="0"/>
+            <for variable="sayac" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;L&#252;tfen Say&#305; Giriniz.&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi %2 == 0">
+                    <then>
+                        <assign variable="toplamcift" expression="toplamcift + sayi"/>
+                    </then>
+                    <else>
+                        <assign variable="toplamtek" expression="toplamtek + sayi"/>
+                    </else>
+                </if>
+                <assign variable="toplam" expression="toplamtek + toplamcift"/>
+            </for>
+            <output expression="&quot;Girdi&#287;iniz Tek Say&#305;lar&#305;n Toplam&#305;: &quot; &amp; toplamtek" newline="True"/>
+            <output expression="&quot;Girdi&#287;iniz &#199;ift Say&#305;lar&#305;n Toplam&#305;: &quot; &amp; toplamcift" newline="True"/>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;lar&#305;n Toplam&#305; &quot; &amp; toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-07 11:35:07 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDc7MTE6Mjg6NTQgw5ZTOzI5MjA="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDc7MTE6MzU6MDcgw5ZTOzE7MzAyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, pozitif, negatif, sifir, d&#246;ng&#252;" type="Integer" array="False" size=""/>
+            <assign variable="pozitif" expression="0"/>
+            <assign variable="negatif" expression="0"/>
+            <assign variable="sifir" expression="0"/>
+            <for variable="d&#246;ng&#252;" start="1" end="10" direction="inc" step="1">
+                <output expression="d&#246;ng&#252; &amp; &quot; . Say&#305;y&#305; Giriniz. &quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi &gt; 0">
+                    <then>
+                        <assign variable="pozitif" expression="pozitif + 1"/>
+                    </then>
+                    <else>
+                        <if expression="sayi == 0">
+                            <then>
+                                <assign variable="sifir" expression="sifir + 1"/>
+                            </then>
+                            <else>
+                                <assign variable="negatif" expression="negatif + 1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Pozitif Say&#305; Adedi: &quot; &amp; pozitif &amp; &quot; Negatif Say&#305; Adedi: &quot; &amp; negatif  &amp; &quot; S&#305;f&#305;r Say&#305;s&#305;: &quot; &amp; sifir" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

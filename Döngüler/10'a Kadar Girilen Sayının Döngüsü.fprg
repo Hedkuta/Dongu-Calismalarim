@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-08 04:20:50 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDg7MDQ6MTk6MDIgw5ZTOzI5MTY="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDg7MDQ6MjA6NTAgw5ZTOzE7MzAxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <while expression="sayi &lt; 10">
+                <assign variable="sayi" expression="sayi + 1"/>
+                <output expression="sayi &amp; &quot;. Hedkuta &quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

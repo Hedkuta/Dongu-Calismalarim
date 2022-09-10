@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-08 06:22:02 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDg7MDY6MTU6MTggw5ZTOzI5MjE="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDg7MDY6MjI6MDIgw5ZTOzE7MzAyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, kalan" type="Integer" array="False" size=""/>
+            <declare name="sayiTaban" type="String" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen 10 Luk Tabandaki Say&#305;n&#305;z&#305; Giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="sayitaban" expression="&quot; &quot;"/>
+            <while expression="sayi &gt; 1">
+                <assign variable="kalan" expression="sayi % 2"/>
+                <assign variable="sayi" expression="int ( sayi / 2  )"/>
+                <assign variable="sayitaban" expression="kalan &amp; sayitaban"/>
+            </while>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;n&#305;n 2 Lik Tabanda G&#246;sterimi: &quot; &amp; &quot;1&quot; &amp; sayitaban" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-07 10:11:16 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDc7MTA6MDc6MTAgw5ZTOzI5MDg="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDc7MTA6MTE6MTYgw5ZTOzE7MzAxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, carpantoplam&#305;, sayac" type="Integer" array="False" size=""/>
+            <assign variable="carpantoplam&#305;" expression="0"/>
+            <output expression="&quot;L&#252;tfen Say&#305;n&#305;z&#305; Giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="sayac" start="1" end="sayi / 2" direction="inc" step="1">
+                <if expression="sayi % sayac = 0">
+                    <then>
+                        <assign variable="carpantoplam&#305;" expression="carpantoplam&#305; + sayac"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="carpantoplam&#305; == sayi">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z M&#252;kemmel Say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z M&#252;kemmel Say&#305; De&#287;il.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

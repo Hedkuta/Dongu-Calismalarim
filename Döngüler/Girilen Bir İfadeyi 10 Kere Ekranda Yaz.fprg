@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-07 09:10:25 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDc7MDk6MDM6NTEgw5ZTOzI5MTc="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDc7MDk6MTA6MjUgw5ZTOzE7MzAyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="metin" type="String" array="False" size=""/>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen Tekrarlanacak &#304;fadeyi Yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="metin"/>
+            <for variable="sayi" start="1" end="10" direction="inc" step="1">
+                <output expression="sayi &amp; &quot;.&quot; &amp; metin" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

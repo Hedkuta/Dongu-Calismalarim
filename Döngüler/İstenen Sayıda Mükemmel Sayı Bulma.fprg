@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-10 07:33:03 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMTA7MDc6MjY6MzMgw5ZTOzI5MTQ="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMTA7MDc6MzM6MDMgw5ZTOzE7MzAxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="istenenM&#252;kemmelsayi, bulunanM&#252;kemmelsayi, kontrolEdilenm&#252;kemmelsayi, sayac, carpantoplami" type="Integer" array="False" size=""/>
+            <assign variable="bulunanM&#252;kemmelsayi" expression="0"/>
+            <assign variable="kontrolEdilenm&#252;kemmelsayi" expression="6"/>
+            <output expression="&quot;L&#252;tfen Ka&#231; Tane M&#252;kemmel Sayi &#304;stedi&#287;inizi Yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="istenenM&#252;kemmelsayi"/>
+            <while expression="istenenM&#252;kemmelsayi &gt; bulunanM&#252;kemmelsayi">
+                <assign variable="carpantoplami" expression="0"/>
+                <for variable="sayac" start="1" end="kontrolEdilenm&#252;kemmelsayi / 2" direction="inc" step="1">
+                    <if expression="kontrolEdilenm&#252;kemmelsayi % sayac == 0">
+                        <then>
+                            <assign variable="carpantoplami" expression="carpantoplami + sayac"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="kontrolEdilenm&#252;kemmelsayi = carpantoplami">
+                    <then>
+                        <output expression="kontrolEdilenm&#252;kemmelsayi" newline="True"/>
+                        <assign variable="bulunanM&#252;kemmelsayi" expression="bulunanM&#252;kemmelsayi + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="kontrolEdilenm&#252;kemmelsayi" expression="kontrolEdilenm&#252;kemmelsayi + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

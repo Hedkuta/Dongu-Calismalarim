@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-08 05:36:54 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDg7MDU6MzM6MDkgw5ZTOzI5MjA="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDg7MDU6MzY6NTQgw5ZTOzE7MzAzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, bolen, flag" type="Integer" array="False" size=""/>
+            <output expression="&quot;Asal Olup Olmad&#305;&#287;&#305;n&#305; Kontrol Etmek &#304;stedi&#287;iniz Say&#305;y&#305; Giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="flag" expression="0"/>
+            <for variable="bolen" start="2" end="sayi / 2" direction="inc" step="1">
+                <if expression="sayi % bolen == 0">
+                    <then>
+                        <assign variable="flag" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="flag == 0">
+                <then>
+                    <output expression="&quot;Girdi&#287;iniz Sayi Bir Asal Say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Girdi&#287;iniz Say&#305; Bir Asal Say&#305; De&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

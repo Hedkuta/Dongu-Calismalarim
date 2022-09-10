@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-08 06:39:22 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDg7MDY6MzY6NTAgw5ZTOzI5MjA="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMDg7MDY6Mzk6MjIgw5ZTOzE7MzAzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen 1.Say&#305;y&#305; Giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;L&#252;tfen 2.Say&#305;y&#305; Giriniz.&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <while expression="sayi1 &lt;&gt; sayi2">
+                <if expression="sayi1 &gt; sayi2">
+                    <then>
+                        <assign variable="sayi1" expression="sayi1 - sayi2"/>
+                    </then>
+                    <else>
+                        <assign variable="sayi2" expression="sayi2 - sayi1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;lar&#305;n OBEB'i: &quot; &amp; sayi1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
